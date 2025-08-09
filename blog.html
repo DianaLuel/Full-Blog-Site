@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog Post - Horizon</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo"><a href="index.html">Horizon</a></div>
+    <nav class="nav-links">
+      <a href="blog.html">Read More</a>
+      <a href="about.html">About Us</a>
+    </nav>
+  </header>
+
+  <!-- Blog Hero Image -->
+  <section class="blog-hero">
+    <img id="hero-image" src="https://cdn.outsideonline.com/wp-content/uploads/2023/04/guided-hike_h.jpg" class="hero-bg" alt="Blog Hero" />
+    <div class="blog-hero-overlay">
+      <span class="tag" id="blog-tag">Destination</span>
+      <h1 id="blog-title">Exploring the Wonders of Hiking</h1>
+      <div class="author-info">
+        <img src="https://static.vecteezy.com/system/resources/previews/029/796/026/non_2x/asian-girl-anime-avatar-ai-art-photo.jpg" alt="Author" class="avatar" />
+        <span id="blog-meta">Theodore Reginad • 24 Jan 2024 • 10 min read</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Content -->
+  <main class="blog-content">
+    <article id="blog-article">
+      <!-- Filled dynamically with JS -->
+    </article>
+<div class="post-nav">
+  <button id="previous-btn" class="next-btn" onclick="loadPreviousPost()">← Previous Post</button>
+  <button id="next-btn" class="next-btn" onclick="loadNextPost()">Next Post →</button>
+</div>
+
+  </main>
+<!-- Comment Section -->
+<section class="comment-section">
+  <h2>Comments</h2>
+
+  <!-- Example Existing Comments -->
+  <div id="comment-list">
+    <div class="comment">
+      <h4>Amelia Rose</h4>
+      <p>🌄 This post really inspired me to finally hike the Simien Mountains. Thanks!</p>
+    </div>
+
+    <div class="comment">
+      <h4>Daniel B.</h4>
+      <p>Loved the gear tips section. I never thought about bringing sunscreen for hiking!</p>
+    </div>
+  </div>
+
+  <!-- New Comment Form -->
+  <div class="comment-form">
+    <h4>Leave a Comment</h4>
+    <input id="comment-name" type="text" placeholder="Your Name" style="width: 100%; padding: 0.5rem; margin-bottom: 0.5rem;" />
+    <textarea id="comment-text" rows="4" style="width: 100%; margin-bottom: 1rem;" placeholder="Write your comment..."></textarea>
+    <button type="button" class="next-btn">Submit</button>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Horizon Blog. All rights reserved.</p>
+  </footer>
+<script src="script.js" defer></script>
+
+</body>
+</html>
